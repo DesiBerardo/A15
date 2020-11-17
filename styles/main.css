@@ -3,7 +3,8 @@
 body {
 	font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
-	width: 800px;
+	width: 99%;
+	max-width: 960px;
 	margin: 0 auto;
 	border: 3px solid #931429 ;
 	background-color: #fffded;
@@ -128,6 +129,8 @@ article img{
 	margin-bottom: 10px;
 	margin-left: 10px;
 	border: black 1px solid;
+	max-width: 40%;
+	min-width: 150px;
 
 }
 main section h2{
@@ -177,4 +180,88 @@ footer p{
 	padding-top: 1em;
 	padding-bottom: 1em;
 	clear: right;
+}
+/* tablet portrait to standard 960 */
+@media only screen and (max-width: 959px) {
+	#nav_menu ul li a {
+		font-size: .875em;                      /* 14 / 16 */
+	}
+	section h1 {
+		font-size: 1.5em;                       /* 24 / 16 */
+	}
+	section h2, aside h2 {
+		font-size: 1.125em;                     /* 18 / 16 */
+	}
+}
+
+#mobile_menu {
+	display: none;
+}
+/* mobile landscape to tablet portrait */
+@media only screen and (max-width: 767px) {
+	#nav_menu {
+		display: none;
+	}
+	#mobile_menu {
+		display: block;
+	}
+	.slicknav_menu {
+		background-color: #800000 !important;
+	}
+	body {
+		width: 100%;
+		margin: 0;
+		border: none;
+	}
+	header, footer p {
+		text-align: center;
+	}
+	footer p { margin-right: 0; }
+	header h2 {
+		font-size: 1.625em;                    /* 26 / 16 */
+		margin: .4em 0 .25em 0;
+	}
+	header h3 {
+		font-size: 1em;                        /* base font size */
+		margin-left: 0;
+	}
+	header img {
+		float: none;
+	}
+	section {
+		width: 95.9596%;                       /* 100 - (2 * 2.0202) for padding */
+		float: none;
+		margin-right: 2.0202%;                 /* 20 / 990 */
+		padding-right: 0;
+	}
+	aside {
+		width: 91.9192%;                       /* 100 - (4 * 2.0202) for padding and margins */
+		float: none;
+		margin: 0 2.0202% 2.0202% 2.0202%;     /* 20 / 990 */
+	}
+}
+
+/* mobile portrait to mobile landscape */
+@media only screen and (max-width: 479px) {
+	header h2 {
+		font-size: 1.375em;                    /* 22 / 16 */
+	}
+	header h3 {
+		font-size: .8125em;                    /* 13 / 16 */
+	}
+	p {
+		font-size: .875em;                     /* 14 / 16 */
+	}
+	section h1, section h2, aside h2 {
+		font-size: 1em;                        /* base font size */
+	}
+	section li, aside li {
+		font-size: .875em;                     /* 14 / 16 */
+	}
+	aside h3 {
+		font-size: .9375em;                     /* 15 / 16 */
+	}
+	footer p {
+		font-size: .6875em;                     /* 11 / 16 */
+	}
 }
