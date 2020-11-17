@@ -172,7 +172,7 @@ a:hover, a:focus{
 	font-style: italic;
 }
 
-/* the styles for the footer */
+
 footer p{
 	background-color: #931429;
 	color: white;
@@ -181,23 +181,22 @@ footer p{
 	padding-bottom: 1em;
 	clear: right;
 }
-/* tablet portrait to standard 960 */
+
 @media only screen and (max-width: 959px) {
 	#nav_menu ul li a {
-		font-size: .875em;                      /* 14 / 16 */
+		font-size: .875em;
 	}
 	section h1 {
-		font-size: 1.5em;                       /* 24 / 16 */
+		font-size: 1.5em;
 	}
 	section h2, aside h2 {
-		font-size: 1.125em;                     /* 18 / 16 */
+		font-size: 1.125em;
 	}
 }
 
 #mobile_menu {
 	display: none;
 }
-/* mobile landscape to tablet portrait */
 @media only screen and (max-width: 767px) {
 	#nav_menu {
 		display: none;
@@ -218,50 +217,50 @@ footer p{
 	}
 	footer p { margin-right: 0; }
 	header h2 {
-		font-size: 1.625em;                    /* 26 / 16 */
+		font-size: 1.625em;
 		margin: .4em 0 .25em 0;
 	}
 	header h3 {
-		font-size: 1em;                        /* base font size */
+		font-size: 1em;
 		margin-left: 0;
 	}
 	header img {
 		float: none;
 	}
 	section {
-		width: 95.9596%;                       /* 100 - (2 * 2.0202) for padding */
+		width: 95.9596%;
 		float: none;
-		margin-right: 2.0202%;                 /* 20 / 990 */
+		margin-right: 2.0202%;
 		padding-right: 0;
 	}
 	aside {
-		width: 91.9192%;                       /* 100 - (4 * 2.0202) for padding and margins */
+		width: 91.9192%;
 		float: none;
-		margin: 0 2.0202% 2.0202% 2.0202%;     /* 20 / 990 */
+		margin: 0 2.0202% 2.0202% 2.0202%;
 	}
 }
 
-/* mobile portrait to mobile landscape */
+
 @media only screen and (max-width: 479px) {
 	header h2 {
-		font-size: 1.375em;                    /* 22 / 16 */
+		font-size: 1.375em;
 	}
 	header h3 {
-		font-size: .8125em;                    /* 13 / 16 */
+		font-size: .8125em;
 	}
 	p {
-		font-size: .875em;                     /* 14 / 16 */
+		font-size: .875em;
 	}
 	section h1, section h2, aside h2 {
-		font-size: 1em;                        /* base font size */
+		font-size: 1em;
 	}
 	section li, aside li {
-		font-size: .875em;                     /* 14 / 16 */
+		font-size: .875em;
 	}
 	aside h3 {
-		font-size: .9375em;                     /* 15 / 16 */
+		font-size: .9375em;
 	}
 	footer p {
-		font-size: .6875em;                     /* 11 / 16 */
+		font-size: .6875em;
 	}
 }
